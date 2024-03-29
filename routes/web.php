@@ -26,6 +26,7 @@ Route::group(['middleware' => 'level:user'], function () {
     Route::get('/Pinjam-Kendaraan/{id}',[DataPeminjamanUserController::class,'pinjamKendaraan'])->name('form.pinjam');
     Route::post('/peminjaman/submit', [DataPeminjamanUserController::class, 'submitFormPinjam'])->name('peminjaman.submit');
     Route::post('/Progres-Peminjaman/{id}', [DataPeminjamanUserController::class, 'storePinjam'])->name('barang.store.pinjam');
+    Route::get('/logout-user', [AuthController::class,'LogoutUser'])->name('logout.user');
 });
 
 Route::group(['middleware' => 'level:administrator'], function () {

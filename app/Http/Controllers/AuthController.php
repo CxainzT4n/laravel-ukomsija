@@ -44,5 +44,9 @@ public function logoutAdmin()
 {
     return $this->logout(); // Panggil metode logout umum
 }
+public function logoutUser()
+{
+    return $this->logout(); // Panggil metode logout umum
+}
 
 }

@@ -250,7 +250,7 @@
                             </div>
                             <div class="d-flex justify-content-end mt-3">
                               <button type="submit" class="btn bg-gradient-primary w-15 px-3 mb-2 me-2" data-class="bg-white" >Pinjam Sekarang</button>
-                              <button class="btn bg-gradient-primary w-15 px-3 mb-2" data-class="bg-default" >cancel</button>
+                              {{-- <button href="/Tabel-Peminjaman" class="btn bg-gradient-primary w-15 px-3 mb-2" data-class="bg-default" >cancel</button> --}}
                             </div>
                           </div>
                         </div>

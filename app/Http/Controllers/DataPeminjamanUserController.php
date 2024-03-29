@@ -12,7 +12,8 @@ class DataPeminjamanUserController extends Controller
 {
     public function indexUser() {
         $user = Auth::user();
-        return view('DashboardUser.index',['user' => $user]);
+        $data = Kendaraan::all();
+        return view('DashboardUser.index', ['data' => $data, 'user' => $user]);
     }
 
     public function tabelPeminjaman() {
